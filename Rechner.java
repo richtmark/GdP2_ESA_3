@@ -27,6 +27,4 @@ public interface Rechner {
 **/
 String[] rechnen(String number1, String number2);
 
-
-
 }

@@ -1,47 +1,39 @@
 /**
- * 
- */
-
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-/**
  * @author Markus Richter
  *
  */
-public class FloatRechner implements Rechner {
-	
-	public String[] rechnen(String number1, String number2) throws NumberFormatException  {
 
-		float ergebnis1, ergebnis2, ergebnis3, ergebnis4, ergebnis5;
-		
-		System.out.println("Jetzt wird mit Zahlen vom Typ Float gerechnet");
-        System.out.println("-------------------------------------------------------");
-		System.out.println("Eingabe der ersten Zahl :");
-		try {
-			zahl1 = Float.parseFloat(new BufferedReader(new InputStreamReader(System.in)).readLine());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		System.out.println("Eingabe der zweiten Zahl :");
-		try {
-			zahl2 = Float.parseFloat(new BufferedReader(new InputStreamReader(System.in)).readLine());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
         
-        ergebnis1 = zahl1+zahl2;
-        System.out.println("Summe : " + ergebnis1 + " ");
-        ergebnis2 = zahl1-zahl2;
-        System.out.println("Differenz : " + ergebnis2 + " ");
-        ergebnis3 = zahl1*zahl2;
-        System.out.println("Produkt : " + ergebnis3 + " ");
-        ergebnis4 = zahl1/zahl2;
-        System.out.println("Division : " + ergebnis4 + " ");
-        ergebnis5 = zahl1%zahl2;
-        System.out.println("Modulo : " + ergebnis5 + " ");
-		return null;
+	public class FloatRechner implements Rechner {
+			
+			String[] ergebnis = new String[5];
+
+			@Override
+			public String[] rechnen(String number1, String number2) throws NumberFormatException {
+		
+				Float fnumber1 = Float.parseFloat(number1);
+				Float fnumber2 = Float.parseFloat(number2);
+					
+				Float sum = fnumber1 + fnumber2;
+				Float diff = fnumber1 - fnumber2;
+				Float prod = fnumber1 * fnumber2;
+				Float div = fnumber1 / fnumber2;
+				Float mod = fnumber1 % fnumber2;
+
+				try{
+					ergebnis[0] = String.valueOf(sum);
+					ergebnis[1] = String.valueOf(diff);
+					ergebnis[2] = String.valueOf(prod);
+					ergebnis[3] = String.valueOf(div);
+					ergebnis[4] = String.valueOf(mod);
+
+				}catch(ArithmeticException e){
+					System.out.println("Division durch Null geht nicht!");
+				}catch(NumberFormatException e){
+					System.out.println("Falsche Zeicheneingabe!");}
+				return ergebnis;
+				
+				
+		}
+	      
 	}
-}

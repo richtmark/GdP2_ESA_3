@@ -14,9 +14,9 @@ public class RechnerTest {
 	 */
 	public static void main(String[] args) {
 		 
-        IntRechner Intrechner = new IntRechner;
-        Intrechner("20","5");
-        new FloatRechner();
-
+		IntRechner intrechner = new IntRechner();
+		intrechner.rechnen("20", "5");
+		FloatRechner frechner = new FloatRechner();
+		frechner.rechnen("50", "3");
 	}
 }
