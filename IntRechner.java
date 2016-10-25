@@ -70,6 +70,7 @@ System.out.println("Division durch Null geht nicht!");
 }catch(NumberFormatException e){
 System.out.println("Falsche Zeicheneingabe!");}
 return ergebnis;
+
 	}
       
 }

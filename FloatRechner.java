@@ -44,5 +44,4 @@ public class FloatRechner implements Rechner {
         System.out.println("Modulo : " + ergebnis5 + " ");
 		return null;
 	}
-
 }
