@@ -1,12 +1,5 @@
 /**
- * 
- */
-
-
-import java.io.IOException;
-
-/**
- * @author impact
+ * @author Markus Richter
  *
  */
 public interface Rechner {
