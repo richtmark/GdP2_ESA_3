@@ -16,7 +16,7 @@ public class RechnerTest {
 		 
         Intrechner = new IntRechner;
         Intrechner("20","5");
-         // new FloatRechner();
+        new FloatRechner();
 
 	}
 }

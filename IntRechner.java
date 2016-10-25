@@ -71,6 +71,5 @@ System.out.println("Division durch Null geht nicht!");
 System.out.println("Falsche Zeicheneingabe!");}
 return ergebnis;
 	}
-
       
 }
