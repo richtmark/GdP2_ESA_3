@@ -14,11 +14,11 @@
 				Float fnumber1 = Float.parseFloat(number1);
 				Float fnumber2 = Float.parseFloat(number2);
 					
-				Float sum = fnumber1 + fnumber2;
-				Float diff = fnumber1 - fnumber2;
-				Float prod = fnumber1 * fnumber2;
-				Float div = fnumber1 / fnumber2;
-				Float mod = fnumber1 % fnumber2;
+				Float sum = (fnumber1 + fnumber2);
+				Float diff = (fnumber1 - fnumber2);
+				Float prod = (fnumber1 * fnumber2);
+				Float div = (fnumber1 / fnumber2);
+				Float mod = (fnumber1 % fnumber2);
 
 				try{
 					ergebnis[0] = String.valueOf(sum);
