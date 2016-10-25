@@ -14,7 +14,8 @@ public class RechnerTest {
 	 */
 	public static void main(String[] args) {
 		 
-        new IntRechner();
+        Intrechner = new IntRechner;
+        Intrechner("20","5");
          // new FloatRechner();
 
 	}
