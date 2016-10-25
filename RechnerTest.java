@@ -9,9 +9,9 @@ public class RechnerTest {
 	 */
 	public static void main(String[] args) {
 		 
-		IntRechner intrechner = new IntRechner();
-		intrechner.rechnen("20", "5");
-		FloatRechner frechner = new FloatRechner();
-		frechner.rechnen("50", "3");
+		Rechner i = new IntRechner();
+		i.rechnen("20", "5");
+		Rechner f = new FloatRechner();
+		f.rechnen("50", "3");
 	}
 }

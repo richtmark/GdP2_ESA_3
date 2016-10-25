@@ -9,7 +9,7 @@ public class IntRechner implements Rechner {
 		String[] ergebnis = new String[5];
 
 		@Override
-		public String[] rechnen(String number1, String number2) {
+		public String[] rechnen(String number1, String number2) throws NumberFormatException {
 	
 			Integer intnumber1 = Integer.decode(number1);
 			Integer intnumber2 = Integer.decode(number2);

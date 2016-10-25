@@ -18,6 +18,6 @@ public interface Rechner {
  * @throws IOException 
  * @throws NumberFormatException 
 **/
-String[] rechnen(String number1, String number2);
+	String[] rechnen(String number1, String number2);
 
 }
